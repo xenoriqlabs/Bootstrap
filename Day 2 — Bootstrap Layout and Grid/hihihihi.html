@@ -3,11 +3,16 @@
 
 <head>
 
+    <!-- ========================================
+            BASIC SETUP
+    ========================================= -->
+
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Bootstrap Columns</title>
+    <title>Bootstrap Row Columns</title>
+
 
     <!-- Bootstrap CSS -->
     <link
@@ -29,10 +34,10 @@
 
         <div class="container">
 
-            <h1>Bootstrap Columns</h1>
+            <h1>Bootstrap Row Columns</h1>
 
             <p class="lead mb-0">
-                Column Sizing and Auto Layout
+                Learn .row-cols-* and Responsive Row Columns
             </p>
 
         </div>
@@ -42,23 +47,24 @@
 
 
     <!-- ========================================
-            MAIN
+            MAIN CONTENT
     ========================================= -->
 
     <main class="container py-5">
 
 
         <!-- ====================================
-                1. EQUAL COLUMNS
+                1. ROW-COLS-2
         ===================================== -->
 
         <section class="mb-5">
 
             <h2 class="mb-4">
-                1. Equal Columns
+                1. row-cols-2
             </h2>
 
-            <div class="row g-3">
+            <div class="row row-cols-2 g-3">
+
 
                 <div class="col">
 
@@ -86,37 +92,11 @@
 
                 </div>
 
-            </div>
 
-        </section>
-
-
-
-        <!-- ====================================
-                2. SPECIFIC WIDTHS
-        ===================================== -->
-
-        <section class="mb-5">
-
-            <h2 class="mb-4">
-                2. Specific Column Widths
-            </h2>
-
-            <div class="row g-3">
-
-                <div class="col-4">
+                <div class="col">
 
                     <div class="bg-warning p-4 text-center rounded">
-                        col-4
-                    </div>
-
-                </div>
-
-
-                <div class="col-8">
-
-                    <div class="bg-info p-4 text-center rounded">
-                        col-8
+                        Column 4
                     </div>
 
                 </div>
@@ -128,39 +108,67 @@
 
 
         <!-- ====================================
-                3. 3-6-3 LAYOUT
+                2. ROW-COLS-3
         ===================================== -->
 
         <section class="mb-5">
 
             <h2 class="mb-4">
-                3. 3 - 6 - 3 Layout
+                2. row-cols-3
             </h2>
 
-            <div class="row g-3">
-
-                <div class="col-3">
-
-                    <div class="bg-secondary text-white p-4 text-center rounded">
-                        col-3
-                    </div>
-
-                </div>
+            <div class="row row-cols-3 g-3">
 
 
-                <div class="col-6">
+                <div class="col">
 
                     <div class="bg-primary text-white p-4 text-center rounded">
-                        col-6
+                        1
                     </div>
 
                 </div>
 
 
-                <div class="col-3">
+                <div class="col">
+
+                    <div class="bg-success text-white p-4 text-center rounded">
+                        2
+                    </div>
+
+                </div>
+
+
+                <div class="col">
+
+                    <div class="bg-danger text-white p-4 text-center rounded">
+                        3
+                    </div>
+
+                </div>
+
+
+                <div class="col">
+
+                    <div class="bg-warning p-4 text-center rounded">
+                        4
+                    </div>
+
+                </div>
+
+
+                <div class="col">
+
+                    <div class="bg-info p-4 text-center rounded">
+                        5
+                    </div>
+
+                </div>
+
+
+                <div class="col">
 
                     <div class="bg-secondary text-white p-4 text-center rounded">
-                        col-3
+                        6
                     </div>
 
                 </div>
@@ -172,63 +180,85 @@
 
 
         <!-- ====================================
-                4. RESPONSIVE COLUMN SIZING
+                3. ROW-COLS-4
         ===================================== -->
 
         <section class="mb-5">
 
             <h2 class="mb-4">
-                4. Responsive Column Sizing
+                3. row-cols-4
             </h2>
 
-            <div class="row g-3">
+            <div class="row row-cols-4 g-3">
 
-                <div class="col-12 col-md-6 col-lg-4">
 
-                    <div class="bg-primary text-white p-4 rounded">
+                <div class="col">
 
-                        <h3>HTML</h3>
-
-                        <p class="mb-0">
-                            12 on mobile,
-                            6 on medium,
-                            4 on large screens.
-                        </p>
-
+                    <div class="bg-primary text-white p-4 text-center rounded">
+                        1
                     </div>
 
                 </div>
 
 
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col">
 
-                    <div class="bg-success text-white p-4 rounded">
-
-                        <h3>CSS</h3>
-
-                        <p class="mb-0">
-                            12 on mobile,
-                            6 on medium,
-                            4 on large screens.
-                        </p>
-
+                    <div class="bg-success text-white p-4 text-center rounded">
+                        2
                     </div>
 
                 </div>
 
 
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col">
 
-                    <div class="bg-danger text-white p-4 rounded">
+                    <div class="bg-danger text-white p-4 text-center rounded">
+                        3
+                    </div>
 
-                        <h3>Bootstrap</h3>
+                </div>
 
-                        <p class="mb-0">
-                            12 on mobile,
-                            6 on medium,
-                            4 on large screens.
-                        </p>
 
+                <div class="col">
+
+                    <div class="bg-warning p-4 text-center rounded">
+                        4
+                    </div>
+
+                </div>
+
+
+                <div class="col">
+
+                    <div class="bg-info p-4 text-center rounded">
+                        5
+                    </div>
+
+                </div>
+
+
+                <div class="col">
+
+                    <div class="bg-secondary text-white p-4 text-center rounded">
+                        6
+                    </div>
+
+                </div>
+
+
+                <div class="col">
+
+                    <div class="bg-dark text-white p-4 text-center rounded">
+                        7
+                    </div>
+
+                </div>
+
+
+                <div class="col">
+
+                    <div class="bg-primary text-white p-4 text-center rounded">
+                        8
                     </div>
 
                 </div>
@@ -240,39 +270,253 @@
 
 
         <!-- ====================================
-                5. AUTO LAYOUT
+                4. RESPONSIVE ROW COLUMNS
         ===================================== -->
 
         <section>
 
             <h2 class="mb-4">
-                5. Auto Layout
+                4. Responsive Row Columns
             </h2>
 
-            <div class="row g-3">
+            <p class="mb-4">
 
+                Mobile:
+                <strong>1 column</strong>
+
+                &nbsp; | &nbsp;
+
+                Medium:
+                <strong>2 columns</strong>
+
+                &nbsp; | &nbsp;
+
+                Large:
+                <strong>4 columns</strong>
+
+            </p>
+
+
+            <!--
+                Mobile       = 1 column
+                Medium (md) = 2 columns
+                Large (lg)  = 4 columns
+            -->
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+
+                <!-- Card 1 -->
                 <div class="col">
 
-                    <div class="bg-dark text-white p-4 text-center rounded">
-                        Auto
+                    <div class="card h-100">
+
+                        <div class="card-body">
+
+                            <h3 class="card-title">
+                                HTML
+                            </h3>
+
+                            <p class="card-text">
+                                Learn the structure of modern
+                                web pages with HTML.
+                            </p>
+
+                            <button class="btn btn-primary">
+                                Learn HTML
+                            </button>
+
+                        </div>
+
                     </div>
 
                 </div>
 
 
-                <div class="col-6">
+                <!-- Card 2 -->
+                <div class="col">
 
-                    <div class="bg-primary text-white p-4 text-center rounded">
-                        col-6
+                    <div class="card h-100">
+
+                        <div class="card-body">
+
+                            <h3 class="card-title">
+                                CSS
+                            </h3>
+
+                            <p class="card-text">
+                                Learn styling, layouts,
+                                Flexbox and Grid.
+                            </p>
+
+                            <button class="btn btn-primary">
+                                Learn CSS
+                            </button>
+
+                        </div>
+
                     </div>
 
                 </div>
 
 
+                <!-- Card 3 -->
                 <div class="col">
 
-                    <div class="bg-dark text-white p-4 text-center rounded">
-                        Auto
+                    <div class="card h-100">
+
+                        <div class="card-body">
+
+                            <h3 class="card-title">
+                                Bootstrap
+                            </h3>
+
+                            <p class="card-text">
+                                Build responsive websites
+                                quickly with Bootstrap.
+                            </p>
+
+                            <button class="btn btn-primary">
+                                Learn Bootstrap
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 4 -->
+                <div class="col">
+
+                    <div class="card h-100">
+
+                        <div class="card-body">
+
+                            <h3 class="card-title">
+                                JavaScript
+                            </h3>
+
+                            <p class="card-text">
+                                Add functionality and
+                                interactivity to websites.
+                            </p>
+
+                            <button class="btn btn-primary">
+                                Learn JavaScript
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 5 -->
+                <div class="col">
+
+                    <div class="card h-100">
+
+                        <div class="card-body">
+
+                            <h3 class="card-title">
+                                React
+                            </h3>
+
+                            <p class="card-text">
+                                Build modern user interfaces
+                                with React.
+                            </p>
+
+                            <button class="btn btn-primary">
+                                Learn React
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 6 -->
+                <div class="col">
+
+                    <div class="card h-100">
+
+                        <div class="card-body">
+
+                            <h3 class="card-title">
+                                Node.js
+                            </h3>
+
+                            <p class="card-text">
+                                Learn backend development
+                                with Node.js.
+                            </p>
+
+                            <button class="btn btn-primary">
+                                Learn Node.js
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 7 -->
+                <div class="col">
+
+                    <div class="card h-100">
+
+                        <div class="card-body">
+
+                            <h3 class="card-title">
+                                MongoDB
+                            </h3>
+
+                            <p class="card-text">
+                                Learn database fundamentals
+                                with MongoDB.
+                            </p>
+
+                            <button class="btn btn-primary">
+                                Learn MongoDB
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 8 -->
+                <div class="col">
+
+                    <div class="card h-100">
+
+                        <div class="card-body">
+
+                            <h3 class="card-title">
+                                Git
+                            </h3>
+
+                            <p class="card-text">
+                                Learn version control and
+                                Git fundamentals.
+                            </p>
+
+                            <button class="btn btn-primary">
+                                Learn Git
+                            </button>
+
+                        </div>
+
                     </div>
 
                 </div>
@@ -293,7 +537,7 @@
     <footer class="bg-dark text-white text-center py-4">
 
         <p class="mb-0">
-            Bootstrap Columns Practice
+            Bootstrap Row Columns Practice
         </p>
 
     </footer>
